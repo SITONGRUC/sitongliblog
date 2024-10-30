@@ -3831,3 +3831,19 @@ input, select, textarea {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.content-columns {
+	display: flex;
+	gap: 20px; /* Space between columns */
+}
+
+.column {
+	flex: 1; /* Equal width for each column */
+}
+
+@media (max-width: 768px) {
+	.content-columns {
+		flex-direction: column; /* Stack columns on smaller screens */
+	}
+}
+
